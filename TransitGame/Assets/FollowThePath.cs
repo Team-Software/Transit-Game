@@ -10,7 +10,7 @@ public class FollowThePath : MonoBehaviour {
 
 	// Walk speed that can be set in Inspector
 	[SerializeField]
-	float moveSpeed = 50f;
+	float moveSpeed = 0f;
 
 	// Index of current waypoint from which Enemy walks
 	// to the next one

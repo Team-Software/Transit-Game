@@ -6,7 +6,7 @@ public class CarController : MonoBehaviour {
 
 	float speedForce = 7f;
 	float torqueForce = -35f;
-	float drifFactor = 0.999f;
+	float driftFactor = 0.999f;
 
 	// Use this for initialization
 	void Start () {
@@ -46,4 +46,5 @@ public class CarController : MonoBehaviour {
 	Vector2 RightVelocity(){
 		return transform.right * Vector2.Dot (GetComponent<Rigidbody2D>().velocity, transform.right);
 	}
+
 }

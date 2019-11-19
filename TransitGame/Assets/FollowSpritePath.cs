@@ -8,7 +8,7 @@ public class FollowSpritePath : MonoBehaviour {
 	Transform targetPathNote;
 	int pathNodeIndex=0;
 
-	float speed = 20f;
+	static float speed = 50f;
 	// Use this for initialization
 	void Start () {
 		pathGO = GameObject.Find ("Path2D");
@@ -48,6 +48,11 @@ public class FollowSpritePath : MonoBehaviour {
 		}
 	}
 
+    public void setSpeed(float v)
+    {
+        Debug.Log("TESTING BUSINESS TAKE CARD");
+        speed = v;
+    }
 
 	void ReachedGoal(){
 		Destroy (gameObject);
